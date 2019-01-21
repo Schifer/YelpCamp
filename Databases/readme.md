@@ -8,3 +8,9 @@
 * SQL(relational) vs. noSQL(non-relational)
     * SQL: Tables, select * from ...
     * noSQL: JSON, looks like JavaScript Objects
+
+
+# Moongose 
+* What is Mongoose?
+* Why are we learning it?
+
