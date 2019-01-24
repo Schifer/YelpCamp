@@ -28,3 +28,33 @@
  * Discuss nested routes
  * Add the comment new and create routes
  * Add new comment form
+
+ # Style Show Page
+ * Add sidebar to showpage
+ * Display comments nicely
+
+ # Finish Styling Show Page
+ * Add public directory
+ * Add custom stylesheet
+
+# Auth pt.1 - Add User Model
+* Install All packages needed for auth
+* Define User Model
+
+# Auth pt.2 - Register
+* Configure Passport
+* Add register routes
+* Add register template
+
+# Auth pt.3 - Login
+* Add login routes
+* Add login template
+
+# Auth pt.4 - Logout/Navbar
+* Add logout route
+* Prevent user from adding a comment if not signed in
+* Add links to navbar
+* Show/hide auth links correctly
+
+# Auth pt.5 - Show/Hide links
+* Show/Hide auth links in navbar correctly
