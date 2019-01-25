@@ -58,3 +58,14 @@
 
 # Auth pt.5 - Show/Hide links
 * Show/Hide auth links in navbar correctly
+
+## Refactor The Routes
+* Use Express router to reorganize all routes
+
+## Users + Comments
+* Associate users and comments
+* Save author's name to a comment automatically
+
+## Users + Campgrounds 
+* Prevent an unauthenticated user from creating a campground
+* Save username+id to newly created campground

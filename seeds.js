@@ -30,14 +30,13 @@ function seedDB(){
         }   
     });
 
-    /* add a few campgrounds */
     data.forEach(function(seed){
         Campground.create(seed, function(err, campground){
             if(err){
                 console.log(err);
             } else {
                 console.log("Added a campground.");
-                /* add a few comments */ 
+                
                 Comment.create({
                     text: "This place is great, but I wish there was internet :)",
                     author: "Shiso"
@@ -49,8 +48,9 @@ function seedDB(){
                         campground.save();
                         console.log("Created a new comment.");
                     }
-                });
+                });   
             }
+            
         });
     });    
 }
