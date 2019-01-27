@@ -80,3 +80,7 @@
 # Deleting Campgrounds
 * Add Destroy Route
 * Add Delete Route
+
+# Authorization
+* User can only edit/delete his/her campground
+* Hide/show edit and delete buttons
