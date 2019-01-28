@@ -20,6 +20,7 @@ router.get("/", function(request, response){
 router.post("/", middleware.isLoggedIn , function(request, response){
     // response.send("You hit the post route.");
     var name = request.body.name;
+    var price = request.body.price;
     var image = request.body.image;
     var desc = request.body.description;
     var author = {
@@ -28,6 +29,7 @@ router.post("/", middleware.isLoggedIn , function(request, response){
     };
     var new_campground = {
         name: name,
+        price: price,
         image: image,
         description: desc,
         author: author
