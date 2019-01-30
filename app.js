@@ -18,7 +18,8 @@ campgroundsRoutes = require("./routes/campgrounds"),
 indexRoutes       = require("./routes/index");
 
 
-mongoose.connect("mongodb://localhost:27017/yelp_camp", { useNewUrlParser: true});
+//mongoose.connect("mongodb://localhost:27017/yelp_camp", { useNewUrlParser: true}); // Local database code
+mongoose.connect("mongodb://admin1:admin1@ds153314.mlab.com:53314/yelpcampb", { useNewUrlParser: true}); // heroku database code mlab
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
@@ -53,8 +54,17 @@ app.use("/campgrounds", campgroundsRoutes);
 app.use("/campgrounds/:id/comments",commentRoutes);
 app.use("/campgrounds/:id/reviews", reviewRoutes);
 
+/* When using heroku
 port = process.env.PORT || 80
 
 app.listen(port, function(){
+    console.log("Yelp Camp server has started");
+});
+
+*/
+
+/* When using localhost */ 
+
+app.listen(3000, function(){
     console.log("Yelp Camp server has started");
 });
