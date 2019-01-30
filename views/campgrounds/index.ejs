@@ -10,6 +10,13 @@
                     >Add a New Campground</a
                 >
             </p>
+            <p>
+                <form action="/campgrounds" method="GET" class="form-inline" id="campground-search">
+                    <div class="form-group">
+                    <input type="text" name="search" placeholder="Campground search..." class="form-control">
+                    </div>
+                </form>
+            </p>
         </div>
     </header>
 
@@ -25,10 +32,6 @@
                 />
                 <div class="card-body">
                     <h5 class="card-title"><%= campground.name %></h5>
-                    <!-- <p class="card-text"> no description needed
-                                Some quick example text to build on the card title and make
-                                up the bulk of the card's content.
-                            </p> -->
                     <a
                         href="/campgrounds/<%= campground._id %>"
                         class="btn btn-primary"
