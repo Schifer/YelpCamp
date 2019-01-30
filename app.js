@@ -53,6 +53,6 @@ app.use("/campgrounds", campgroundsRoutes);
 app.use("/campgrounds/:id/comments",commentRoutes);
 app.use("/campgrounds/:id/reviews", reviewRoutes);
 
-app.listen(3000, function(){
+app.listen(port, function(){
     console.log("Yelp Camp server has started");
 });
