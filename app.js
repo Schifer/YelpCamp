@@ -13,6 +13,7 @@ var seedDB          = require("./seeds");
 
 // requering routes
 var commentRoutes = require("./routes/comments"),
+reviewRoutes     = require("./routes/reviews"),
 campgroundsRoutes = require("./routes/campgrounds"),
 indexRoutes       = require("./routes/index");
 
@@ -50,6 +51,7 @@ app.use(function(req, res, next){ // Middleware for every single route
 app.use("/", indexRoutes);
 app.use("/campgrounds", campgroundsRoutes);
 app.use("/campgrounds/:id/comments",commentRoutes);
+app.use("/campgrounds/:id/reviews", reviewRoutes);
 
 app.listen(3000, function(){
     console.log("Yelp Camp server has started");
