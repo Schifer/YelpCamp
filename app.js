@@ -53,6 +53,8 @@ app.use("/campgrounds", campgroundsRoutes);
 app.use("/campgrounds/:id/comments",commentRoutes);
 app.use("/campgrounds/:id/reviews", reviewRoutes);
 
+port = process.env.PORT || 80
+
 app.listen(port, function(){
     console.log("Yelp Camp server has started");
 });
