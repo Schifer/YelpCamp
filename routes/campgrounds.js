@@ -2,7 +2,8 @@ var express = require("express"),
 router      = express.Router(),
 Campground  = require("../models/campgrounds"),
 Review      = require("../models/review"),
-middleware  = require("../middleware");
+middleware  = require("../middleware"),
+Comment         = require("../models/comment");
 
 
 /* INDEX Show all campgrounds */ 
