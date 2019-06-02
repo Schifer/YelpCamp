@@ -26,7 +26,7 @@ app.use(express.static(__dirname + "/public"));
 app.use(methodOverride("_method"));
 app.use(flash());
 /* seed the database */ 
-//seedDB(); 
+seedDB(); 
 
 /* Passport configuration */
 app.use(require("express-session")({
