@@ -13,9 +13,9 @@ const seedDB          = require("./seeds");
 
 // requering routes
 const commentRoutes = require("./routes/comments"),
-reviewRoutes     = require("./routes/reviews"),
-campgroundsRoutes = require("./routes/campgrounds"),
-indexRoutes       = require("./routes/index");
+reviewRoutes        = require("./routes/reviews"),
+campgroundsRoutes   = require("./routes/campgrounds"),
+indexRoutes         = require("./routes/index");
 
 
 //mongoose.connect("mongodb://localhost:27017/yelp_camp", { useNewUrlParser: true}); // Local database code

@@ -1,5 +1,7 @@
 ## YelpCamp
 
+# Live on: https://spothunt.herokuapp.com
+
 # Add Mongoose
 * Install and configure Mongoose
 * Setup campground model
