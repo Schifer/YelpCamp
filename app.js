@@ -71,4 +71,4 @@ app.listen(3000, function(){
 
 */ 
 
-Campground.deleteOne({"author":"Chad"});
+Campground.deleteOne({"name":"LBA Home in France"});
