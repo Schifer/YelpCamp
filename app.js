@@ -1,18 +1,18 @@
-var express         = require("express");
-var app             = express();
-var bodyParser      = require("body-parser");
-var mongoose        = require("mongoose");
-var flash           = require("connect-flash");
-var passport        = require("passport");
-var LocalStrategy   = require("passport-local");
-var methodOverride  = require("method-override");
-var Campground      = require("./models/campgrounds");
-var Comment         = require("./models/comment");
-var User            = require("./models/user");
-var seedDB          = require("./seeds");
+const express         = require("express");
+const app             = express();
+const bodyParser      = require("body-parser");
+const mongoose        = require("mongoose");
+const flash           = require("connect-flash");
+const passport        = require("passport");
+const LocalStrategy   = require("passport-local");
+const methodOverride  = require("method-override");
+const Campground      = require("./models/campgrounds");
+const Comment         = require("./models/comment");
+const User            = require("./models/user");
+const seedDB          = require("./seeds");
 
 // requering routes
-var commentRoutes = require("./routes/comments"),
+const commentRoutes = require("./routes/comments"),
 reviewRoutes     = require("./routes/reviews"),
 campgroundsRoutes = require("./routes/campgrounds"),
 indexRoutes       = require("./routes/index");
@@ -54,17 +54,18 @@ app.use("/campgrounds", campgroundsRoutes);
 app.use("/campgrounds/:id/comments",commentRoutes);
 app.use("/campgrounds/:id/reviews", reviewRoutes);
 
-/* When using heroku 
-port = process.env.PORT || 80
+/* When using heroku  */
+const port = process.env.PORT || 80;
 
 app.listen(port, function(){
     console.log("Yelp Camp server has started");
 });
-*/
 
 
-/* When using localhost */ 
+/* When using localhost 
 
 app.listen(3000, function(){
     console.log("Yelp Camp server has started");
 });
+
+*/ 
