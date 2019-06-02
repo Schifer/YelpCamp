@@ -25,8 +25,9 @@ app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 app.use(methodOverride("_method"));
 app.use(flash());
-/* seed the database */ 
+/* seed the database 
 seedDB(); 
+*/ 
 
 /* Passport configuration */
 app.use(require("express-session")({
@@ -69,3 +70,5 @@ app.listen(3000, function(){
 });
 
 */ 
+
+Campground.deleteOne({"author":"Chad"});
