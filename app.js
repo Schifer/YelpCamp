@@ -59,7 +59,7 @@ app.use("/campgrounds/:id/reviews", reviewRoutes);
 const port = process.env.PORT || 80;
 
 app.listen(port, function(){
-    console.log("Yelp Camp server has started");
+    console.log("SpotHunt server has started");
 });
 
 
