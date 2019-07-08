@@ -17,6 +17,14 @@
                     </div>
                 </form>
             </p>
+            <div id='map' style='width: 400px; height: 300px;'></div>
+            <script>
+            mapboxgl.accessToken = 'pk.eyJ1Ijoib25laXJvczI0MSIsImEiOiJjanh0MjJwdTcwcHhkM25vajJkbWVqcWFoIn0.frqQzWfaabubHL63W-EhRg';
+            var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11'
+            });
+            </script>
         </div>
     </header>
 
